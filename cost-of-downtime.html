@@ -1,0 +1,54 @@
+<main>
+        <section class="container">
+            <h2>Commercial Cost of Downtime Calculator</h2>
+            <p style="text-align: center; max-width: 800px; margin: -20px auto 50px;">For a business, a power outage isn't just an inconvenience—it's lost revenue. Use our simple calculator to estimate the real cost of downtime for your operation and see why a standby generator is a smart investment.</p>
+            
+            <div class="calculator">
+                <div class="form-group">
+                    <label for="revenue">Your Average HOURLY Revenue ($)</label>
+                    <input type="number" id="revenue" placeholder="e.g., 1500">
+                </div>
+                <div class="form-group">
+                    <label for="employees">Number of Employees Affected</label>
+                    <input type="number" id="employees" placeholder="e.g., 10">
+                </div>
+                 <div class="form-group">
+                    <label for="wage">Average Employee Hourly Wage ($)</label>
+                    <input type="number" id="wage" placeholder="e.g., 25">
+                </div>
+                <div class="form-group">
+                    <label for="hours">Estimated Hours of Downtime</label>
+                    <input type="number" id="hours" placeholder="e.g., 4">
+                </div>
+                <button id="calculateBtn" class="btn">Calculate Cost</button>
+
+                <div id="downtime-result" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+<script>
+    const calculateBtn = document.getElementById('calculateBtn');
+    const resultDiv = document.getElementById('downtime-result');
+
+    calculateBtn.addEventListener('click', () => {
+        const revenue = parseFloat(document.getElementById('revenue').value) || 0;
+        const employees = parseFloat(document.getElementById('employees').value) || 0;
+        const wage = parseFloat(document.getElementById('wage').value) || 0;
+        const hours = parseFloat(document.getElementById('hours').value) || 0;
+
+        const lostRevenue = revenue * hours;
+        const lostWages = employees * wage * hours;
+        const totalCost = lostRevenue + lostWages;
+
+        if (totalCost > 0) {
+            resultDiv.innerHTML = `Estimated Cost of Downtime: <strong>$${totalCost.toLocaleString()}</strong>`;
+            resultDiv.style.display = 'block';
+        } else {
+            resultDiv.innerHTML = 'Please enter valid numbers to calculate the cost.';
+            resultDiv.style.display = 'block';
+        }
+    });
+</script>
+
+</body>
+</html>
