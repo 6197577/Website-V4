@@ -209,7 +209,7 @@
                     <div class="w-full md:w-1/3 text-center p-6 bg-blue-50 rounded-lg border-2 border-blue-600">
                         <h3 class="text-xl font-bold text-blue-900">Our Audit Cost</h3>
                         <p class="text-5xl font-black text-blue-800 my-4">
-                            $2,500
+                            $3,500
                         </p>
                         <p class="text-gray-600 font-medium">
                             One-Time Fixed Fee
