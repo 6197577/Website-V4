@@ -8,6 +8,20 @@
     "deploy": "vercel --prod"
   },
   "keywords": [
+    "Interlachen"
+    "Gainesville Florida"
+    "Sissionville"
+    "Cross Lanes"
+    "Teays Valley"
+    "Nitro"
+    "Saint Albans"
+    "South Charleston"
+    "Charleston" 
+    "West Virginia"
+    "lighting repair"
+    "motor repair"
+    "energy audit"
+    "electric repair"
     "electric",
     "risk-audit",
     "downtime",
