@@ -21,6 +21,10 @@
     "lighting repair"
     "motor repair"
     "energy audit"
+    "programmable logic"
+    "switchgear inspection"
+    "electrical inspection"
+    "electric inspections"
     "electric repair"
     "electric",
     "risk-audit",
