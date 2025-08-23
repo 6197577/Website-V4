@@ -1,0 +1,10 @@
+curl https://api.deepseek.com/v3/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer sk-5f8813f947f542a8b92890c220183e34" \
+  -d '{
+    "model": "deepseek-chat",
+    "messages": [
+      {"role": "system", "content": "You are a helpful assistant"},
+      {"role": "user", "content": "Hello!"}
+    ]
+  }'
