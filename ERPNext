@@ -1,0 +1,2 @@
+bench get-app erpnext
+bench --site [https://www.electricdrsdesigns.com] install-app erpnext
