@@ -1,5 +1,3 @@
-# eds
-
 TODO:
 
 Add Instagram
